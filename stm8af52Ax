@@ -1,0 +1,4 @@
+for input:
+low = 0.3 * VDO
+high = 0.7 * VDD
+hysteresis = 0.1*VDD
