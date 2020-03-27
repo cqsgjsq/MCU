@@ -48,3 +48,11 @@ Do：AMU或者halt模式期间给芯片加热，低功耗会下降很多，随�
 2020.3.26
 关于芯片自身的低功耗，主要集中在IO口，和外部电路的电流，
 不能对所有的IO口都输出为低，demo:CAN module ，T/RX要设置为开漏，开漏比输出低电平更加省电，原因是CAN驱动芯片的影响；
+
+2020.3.27
+操作eeprom的时候，要注意MCU的电压
+MCU operating voltage（execute code） 2.6V~5.5V  
+MCU operating voltage（all mode ,execute write erase） 2.6V~5.5V  
+标准programming（1byte，4byte 128byte）time 	Max == 6.6MS
+erase Time for 1block（128 bytes）               Max == 3.3Ms
+
