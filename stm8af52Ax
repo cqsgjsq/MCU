@@ -55,6 +55,7 @@ MCU operating voltage（execute code） 2.6V~5.5V
 MCU operating voltage（all mode ,execute write erase） 2.6V~5.5V  
 标准programming（1byte，4byte 128byte）time 	Max == 6.6MS
 erase Time for 1block（128 bytes）               Max == 3.3Ms
+MCU execute code逻辑判断的时候，要特别注意eeprom的操作时间 很重要！
 
 2020.3.28
 IAR从debug版本到release版本，其实debug版本里面有很多系统自己添加的仿真代码，所谓的软件仿真调试，就是在程序中添加一些代码，设置一些陷阱，然后在这里打断点，所以debug版本编译出来的烧录文件比release版本大很多
