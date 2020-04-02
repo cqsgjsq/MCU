@@ -20,4 +20,10 @@ SPC的fccu引脚不能被拉低，否则其他引脚输出低电平的时候，�
 vnh7040 multsense输出，不能直接连接到MCU的IO口，需要一个外部下拉电阻，然有电流流出来，那肯定就有个内阻
 该诊断主要是根据电流的大小来决定的，串联电路，其电流大小不变，所以其下拉电阻大小不影响其诊断，读取sense的电压然后/其阻值，就可得到其电流，然后电流*比例系数就可以得到OUT输出
 recommend:在电机运行过程中只检查HSA/B，在电机停止时，依次循环检查LSA/B，
-about short To VCC/GND，
+
+HSA/HSB电压有个下尖峰？高边电压只受VCC影响！在电机工作时刻，把VCC拉低了一点！
+电机运行过程中， monitor current of HSA/HSB ，会有个差不多5V多的尖峰？该诊断输出的值与OUTx的电流成比例关系。
+答：该诊断输出是否受HSA/B的下尖峰有关？TBD？
+
+about short To VCC/GND:
+答：？
