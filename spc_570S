@@ -25,6 +25,4 @@ HSA/HSB电压有个下尖峰？高边电压只受VCC影响！在电机工作时�
 电机运行过程中， monitor current of HSA/HSB ，会有个差不多5V多的尖峰？该诊断输出的值与OUTx的电流成比例关系。
 答：该诊断输出是否受HSA/B的下尖峰有关？TBD？
 
-about short To VCC/GND:
-答：？
-22
+													
